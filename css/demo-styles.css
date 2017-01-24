@@ -1,0 +1,34 @@
+.yesDude {
+  color: magenta; }
+
+h1, h2 {
+  color: red; }
+
+.para1 {
+  font-size: 16px;
+  border: 1px solid red; }
+
+.para1:before {
+  content: " Schm"; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif; }
+  body p {
+    font-family: Times; }
+  body p.para1 {
+    font-family: "Courier New"; }
+
+.yesDude {
+  border-radius: 8px;
+  padding: 20px; }
+
+.Inverted {
+  color: yellow; }
+
+.Lightened {
+  color: #b3b3ff; }
+
+.Darkened {
+  color: navy; }
+
+/*# sourceMappingURL=demo-styles.css.map */

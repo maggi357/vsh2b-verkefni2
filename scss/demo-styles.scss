@@ -1,0 +1,53 @@
+$nicecolour: red;
+$myStringVar: " Schm";
+$myFontSize: 16px;
+$niceborder: 1px solid $nicecolour;
+$edcolour: blue;
+
+@import "import.scss";
+
+h1, h2 
+{ color: $nicecolour; }
+
+.para1 
+{
+	font-size: $myFontSize;
+	border: $niceborder;
+}
+
+.para1:before 
+{
+	content: $myStringVar
+}
+
+body 
+{
+	 font-family: Helvetica, Arial, sans-serif;
+
+	 p{font-family: Times;}
+	p.para1{font-family: "Courier New"} 
+}
+
+
+@mixin jaGaur
+{
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.yesDude { @include jaGaur; }
+
+.Inverted 
+{
+	color: invert($edcolour);
+}
+
+.Lightened
+{
+	color: lighten($edcolour, 35%);
+}
+
+.Darkened
+{
+	color: darken($edcolour, 25%);
+}
